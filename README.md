@@ -1,4 +1,4 @@
-# Nachwuchsfußball Netlify
+# N1achwuchsfußball Netlify
 
 ## Deployment
 1. ZIP entpacken und den Ordner als neues Netlify-Projekt deployen, am besten über Git.
