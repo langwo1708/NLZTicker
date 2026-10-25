@@ -1,4 +1,4 @@
-# N1achwuchsfußball Netlify
+# Nachwuchsfußball Netlify
 
 ## Deployment
 1. ZIP entpacken und den Ordner als neues Netlify-Projekt deployen, am besten über Git.
@@ -10,6 +10,9 @@
 
 ## Live-Ansicht
 Im aktiven Spiel **Live-Ansicht aktivieren** und danach **Öffentlichen Live-Link teilen**. Zuschauer haben nur Leserechte. Die Ansicht aktualisiert sich alle 4 Sekunden.
+
+## Tore bearbeiten
+Jedes Tor im Spielverlauf kann über **Ändern** einzeln bearbeitet werden: Typ (eigenes Tor/Gegentor), Torschütze, Spielminute und Abschnitt. Über **Löschen** wird ein einzelnes Tor entfernt. Danach werden die Ereignisse chronologisch sortiert und alle Zwischenstände neu berechnet. Die öffentliche Live-Ansicht übernimmt die Korrektur beim nächsten Abruf.
 
 ## Speicherung
 Die zentrale Speicherung erfolgt in Netlify Blobs im Store `football-data`. Der Browser speichert keine Admin-Daten dauerhaft, nur das Session-Token bis zum Schließen des Tabs.
