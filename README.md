@@ -12,10 +12,10 @@
 Im aktiven Spiel **Live-Ansicht aktivieren** und danach **Öffentlichen Live-Link teilen**. Zuschauer haben nur Leserechte. Die Ansicht aktualisiert sich alle 4 Sekunden.
 
 ## Teams und Gegner
-Eigene Mannschaften und Gegner werden beide unter **Teams** angelegt. Gegnerteams bleiben einfach ohne Spieler. Beim Anlegen eines Spiels werden Mannschaft und Gegner aus den angelegten Teams gewählt; das eigene Team wird in der Gegnerliste ausgeblendet.
+Eigene Mannschaften und Gegner werden beide unter **Teams** angelegt. Gegnerteams können ohne Spieler bleiben; für Gegner-Torschützen können optional Spieler ergänzt werden. Beim Anlegen eines Spiels werden Mannschaft und Gegner aus den angelegten Teams gewählt, der Gegnerkader wird für das Spiel übernommen und das eigene Team wird in der Gegnerliste ausgeblendet.
 
 ## Tore bearbeiten
-Jedes Tor im Spielverlauf kann über **Ändern** einzeln bearbeitet werden: Typ (eigenes Tor/Gegentor), Torschütze, Spielminute und Abschnitt. Über **Löschen** wird ein einzelnes Tor entfernt. Danach werden die Ereignisse chronologisch sortiert und alle Zwischenstände neu berechnet. Die öffentliche Live-Ansicht übernimmt die Korrektur beim nächsten Abruf.
+Jedes Tor im Spielverlauf kann über **Ändern** einzeln bearbeitet werden: Typ (eigenes Tor/Gegentor), Torschütze, Spielminute und Abschnitt. Bei Gegentoren kann der Torschütze aus dem Gegnerkader gewählt werden; bei Bedarf wird das Tor ohne Torschützen gespeichert. Über **Löschen** wird ein einzelnes Tor entfernt. Danach werden die Ereignisse chronologisch sortiert und alle Zwischenstände neu berechnet. Die öffentliche Live-Ansicht übernimmt die Korrektur beim nächsten Abruf.
 
 ## Speicherung
 Die zentrale Speicherung erfolgt in Netlify Blobs im Store `football-data`. Der Browser speichert keine Admin-Daten dauerhaft, nur das Session-Token bis zum Schließen des Tabs.
