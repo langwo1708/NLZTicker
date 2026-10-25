@@ -11,6 +11,9 @@
 ## Live-Ansicht
 Im aktiven Spiel **Live-Ansicht aktivieren** und danach **Öffentlichen Live-Link teilen**. Zuschauer haben nur Leserechte. Die Ansicht aktualisiert sich alle 4 Sekunden.
 
+## Teams und Gegner
+Eigene Mannschaften und Gegner werden beide unter **Teams** angelegt. Gegnerteams bleiben einfach ohne Spieler. Beim Anlegen eines Spiels werden Mannschaft und Gegner aus den angelegten Teams gewählt; das eigene Team wird in der Gegnerliste ausgeblendet.
+
 ## Tore bearbeiten
 Jedes Tor im Spielverlauf kann über **Ändern** einzeln bearbeitet werden: Typ (eigenes Tor/Gegentor), Torschütze, Spielminute und Abschnitt. Über **Löschen** wird ein einzelnes Tor entfernt. Danach werden die Ereignisse chronologisch sortiert und alle Zwischenstände neu berechnet. Die öffentliche Live-Ansicht übernimmt die Korrektur beim nächsten Abruf.
 
