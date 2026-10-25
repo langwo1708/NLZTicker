@@ -1,0 +1,8 @@
+{
+  "name": "nachwuchsfussball-netlify",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@netlify/blobs": "latest"
+  }
+}

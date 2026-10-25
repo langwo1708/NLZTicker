@@ -1,0 +1,21 @@
+# Nachwuchsfußball Netlify
+
+## Deployment
+1. ZIP entpacken und den Ordner als neues Netlify-Projekt deployen, am besten über Git.
+2. Unter **Site configuration > Environment variables** setzen:
+   - `ADMIN_PASSWORD`: eigenes starkes Admin-Passwort
+   - `SESSION_SECRET`: mindestens 32 zufällige Zeichen
+3. Danach einen neuen Deploy auslösen.
+4. Website öffnen und mit `ADMIN_PASSWORD` anmelden.
+
+## Live-Ansicht
+Im aktiven Spiel **Live-Ansicht aktivieren** und danach **Öffentlichen Live-Link teilen**. Zuschauer haben nur Leserechte. Die Ansicht aktualisiert sich alle 4 Sekunden.
+
+## Speicherung
+Die zentrale Speicherung erfolgt in Netlify Blobs im Store `football-data`. Der Browser speichert keine Admin-Daten dauerhaft, nur das Session-Token bis zum Schließen des Tabs.
+
+## Sicherheit
+- Schreibzugriff erfolgt nur mit einem signierten Admin-Token.
+- Das Admin-Passwort und der Session-Schlüssel gehören ausschließlich in die Netlify-Umgebungsvariablen.
+- Der öffentliche Endpunkt liefert nur freigegebene Spieldaten.
+- Für mehrere gleichzeitige Admins oder sehr umfangreiche Daten sollte später Netlify Database/Postgres eingesetzt werden.

@@ -1,0 +1,2 @@
+import {json,readData,cleanPublic} from "./_shared.mjs";
+export default async(req)=>{if(req.method!=="GET")return json({error:"Methode nicht erlaubt"},405);const id=new URL(req.url).searchParams.get("id");const data=await readData();const item=cleanPublic(data.matches.find(m=>m.publicId===id));return item?json(item,200,{"access-control-allow-origin":"*"}):json({error:"Live-Spiel nicht gefunden oder nicht freigegeben"},404)}

@@ -1,0 +1,2 @@
+import {json,isAdmin,readData,writeData} from "./_shared.mjs";
+export default async(req)=>{if(!isAdmin(req))return json({error:"Nicht angemeldet"},401);if(req.method==="GET")return json(await readData());if(req.method==="PUT"){let body;try{body=await req.json()}catch{return json({error:"Ungültiges JSON"},400)}if(!Array.isArray(body.teams)||!Array.isArray(body.matches)||!Array.isArray(body.seasons))return json({error:"Ungültige Datenstruktur"},400);return json(await writeData(body))}return json({error:"Methode nicht erlaubt"},405)}
